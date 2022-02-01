@@ -10,16 +10,58 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>trillo &mdash; Your all-in-one booking app</title>
   </head>
   <body>
-      <div class="container">
-        <header class="header">Header part</header>
-        <div class="content">
-          <nav class="sidebar">Navigation</nav>
-          <main class="hotel-view">Hotel view</main>
-        </div>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="trillo logo" class="logo" />
+        <form action="#" class="search">
+          <input
+            type="text"
+            placeholder="Search hotels"
+            class="search__input"
+          />
+          <button class="search__button">
+            <ion-icon class="search__icon" name="search-outline"></ion-icon>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+              <span class="user-nav__notification">7</span>
+            </svg>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+              <span class="user-nav__notification">13</span>
+            </svg>
+          </div>
+          <div class="user-nav__user">
+            <img
+              src="img/user.jpg"
+              alt="User photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Daniel</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">Navigation</nav>
+        <main class="hotel-view">Hotel view</main>
       </div>
+    </div>
   </body>
 </html>
